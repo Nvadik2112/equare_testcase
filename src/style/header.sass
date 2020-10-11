@@ -1,0 +1,57 @@
+%display
+ display: flex
+ justify-content: space-between
+ padding-top: 40px 
+header
+ @extend %display
+a
+ margin-right: 32px
+ color: fff
+ text-decoration: none
+ font-weight: 400
+ cursor: pointer
+ color: white 
+ &:hover
+  color: #6A7CE0
+  transition: all 0.2s
+
+.header-bar
+ display: flex
+ margin-top: 12px 
+.header-left
+ display: flex
+ &__bar 
+  margin-left: 56px 
+#main
+ font-weight: 600
+ 
+.header-right
+ display: flex
+ padding-right: 0px
+
+@media (max-width: 1080px)
+ header   
+  width: 90%
+  margin: auto
+ .header-right
+  flex-direction: column  
+  padding-right: 10px
+  &__bar
+   padding-left: 12px
+   padding-bottom: 20px
+
+
+@media (max-width: 760px)
+ header
+  display: flex    
+  flex-direction: column
+  width: 90%
+ .header-left__bar
+  margin-left: 10px
+ .header-right
+   margin-left: 50px
+   &__bar
+    padding-left: 20px 
+   & a
+    margin-right: 50px     
+ 
